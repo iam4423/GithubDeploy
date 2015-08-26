@@ -1,0 +1,26 @@
+{
+    "gitPath": "/usr/local/bin/git",
+    "bashPath": "/usr/bin/bash",
+    
+    "deployScript": "/var/www/vhosts/example.com/htdocs/deploy.sh",
+    "preDeploy":[
+        "php '/var/www/vhosts/example.com/htdocs/somePHPscript.php'"
+    ],
+    "postDeploy": [
+        "sh '/var/www/vhosts/example.com/htdocs/someShellScript.sh'"
+    ],
+    
+    "htdocsPath": "/var/www/vhosts/example.com/htdocs",
+    "mergerPath": "/var/www/vhosts/example.com/repoName",
+    "deployBranch": "deploy",
+    "htdocsBranch": "htdocs",
+    "eventTypes": ["push"],
+    
+    "excludeFiles": [
+        "lib/php/config.php",
+        "lib/php/SomeClass.php"
+    ],
+    
+    "logPath": "deploy.log",
+    "payloadSecret": "s0mEStR!ng"
+}
