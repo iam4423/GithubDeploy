@@ -5,9 +5,11 @@ I use a similar process to this at work to deploy some websites and decided to m
 generalised one for my home use
 
 # Requirements
-git >= 2.5.0
-bash
-php >= 5.4.0
+git >= 2.5.0 
+
+bash 
+
+php >= 5.4.0 
 
 # Prerequisites
 This assumes that you already have a git repo setup on your live server with a separate worktree 
